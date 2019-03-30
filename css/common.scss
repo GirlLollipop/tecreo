@@ -20,6 +20,11 @@ body {
     }
  }
 
+ .carousel.carousel-slider .carousel-item {
+   margin-top: 3rem !important;
+ }
+
+
  div{
    &#toAction{
     text-align: center;
@@ -139,6 +144,8 @@ section#map-word{
     margin-left: 10%;
   }
 }
+
+
 
 @media (min-width:998px) {
   img{
