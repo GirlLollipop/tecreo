@@ -1,0 +1,35 @@
+{
+    "Organitations": {
+        "id": 1,
+        "type": "ONG",
+        "status": "ACTIVE",
+        "name": "",
+        "description":"",
+        "logo": {
+            "url": "https://storage.googleapis.com/ntr-cdn-media-img/9badcf87f6dc87396a180efcb967887824fa2bcb.png",
+            "mime": "png",
+            "name": "redes.png",
+            "type":"img",
+          },
+          "direction":"",
+          "alcaldia":"",
+          "zona":"",
+          "ubication":"",
+          "telefono":"",
+          "email":"",
+          "redesSociales"{
+            "facebook":{
+              "url":"",
+            },
+            "twitter":{
+              "url":"",
+            },
+          },
+          "keywords":{
+
+          },
+          "categorias":{
+
+          }
+    }
+}
