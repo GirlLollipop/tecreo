@@ -25,29 +25,42 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <nav class="nav-extended">
+    <nav class="nav-extended ">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo"> <img id="logo"src="" alt=""> </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="views/tellme.html">Cuéntame</a></li>
-        <li class="tab"><a class="active" href="views/allies.html">Aliadas</a></li>
-        <li class="tab"><a href="views/mapInfo.html">Mapa/info</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="views/mapInfo.html">Mapa de denuncia</a></li>
+      <li><a href="#!">Violencia de genero</a></li>
+      <li><a href="#!">¿Qué es TE CREO?</a></li>
+      <li><a href="#!">La red TE CREO</a></li>
+      <li><a href="#!">Agregarse a red TE CREO</a></li>
+      <li><a href="#!">Investigación</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Contribuir</a></li>
     </ul>
+    <!-- SideNav Structure -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="views/mapInfo.html">Mapa de denuncia</a></li>
+      <li><a href="sass.html">Violencia de genero</a></li>
+      <li><a href="badges.html">¿Qué es TE CREO?</a></li>
+      <li><a href="collapsible.html">La red TE CREO</a></li>
+      <li><a href="collapsible.html">Agregarse a red TE CREO</a></li>
+      <li><a href="collapsible.html">Investigación</a></li>
+      <li><a href="collapsible.html">Contribuir</a></li>
+    </ul>
+    <div id="toAction"class="">
+      <a class="btn-large" href="">Blog</a>
+      <a class="btn-large" href="views/tellme.html">Cuéntanos</a>
+      <a class="btn-large" href="views/allies.html">Aliadas</a>
+    </div>
     <section class="content">
       <div id="portrait"class="">
          <div class="carousel-fixed-item center">
@@ -88,35 +101,37 @@
         </div>
       </div>
 
-      <div id="article-1" class="col s12 m7">
-        <h2 class="header">Horizontal Card</h2>
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="https://lorempixel.com/400/220/nature/6">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.</p>
+      <div class="container">
+        <div id="article-1" class="col s12 m7">
+          <h2 class="header">Horizontal Card</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="https://lorempixel.com/400/220/nature/6">
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="article-2" class="col s12 m7">
-        <h2 class="header">Horizontal Card</h2>
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="https://lorempixel.com/400/220/nature/6">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.</p>
+        <div id="article-2" class="col s12 m7">
+          <h2 class="header">Horizontal Card</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="https://lorempixel.com/400/220/nature/6">
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
         </div>

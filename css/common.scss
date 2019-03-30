@@ -7,3 +7,30 @@ body {
  main {
    flex: 1 0 auto;
  }
+
+ nav{
+    div{
+      &.nav-wrapper{
+        background-color: #774181;
+      }
+    }
+ }
+
+ div{
+   &#toAction{
+    text-align: center;
+    font-weight: bolder;
+   }
+ }
+
+img{
+  &#logo{
+    width: 20%;
+  }
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: #774181;
+}
