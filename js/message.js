@@ -1,5 +1,5 @@
 const selectedID = localStorage.getItem('selectedID');
-console.log('ID i love myself', selectedID)
+console.log('selectedId', selectedID)
 
 
 // Se obtienen mensajes de firestore
@@ -42,7 +42,7 @@ db.collection('posted').onSnapshot((querySnapshot) => {
     let newID = postID + 1;
     let commentID = postID + 2;
     console.log('inside', bringComments)
-    
+    choosingOrg(postID, text)
       comentarios.innerHTML += `
       <h5>${postName}</h5>
       <h5>${title}</h5>
@@ -72,6 +72,7 @@ const printComments = (postToPrint) => {
         console.log('cmmtd', commentedSpaceID)
 
       if (selectedID == commentedID){
+
         responses.innerHTML += `<div class="">
       
       <p><strong>${commentedName} respondió</strong> ${commentedFecha}</p>
@@ -150,3 +151,62 @@ const printComments = (postToPrint) => {
       console.error('Error: ', error);
     });
   };
+
+const addOrg = document.getElementById('addOrg');
+/*
+db.collection('posted').onSnapshot((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    let thisComment = doc.data().comments;
+    let thisPostID = doc.id; // ID del post
+    console.log('aqui', thisComment, thisPostID)
+    choosingOrg(thisComment, thisPostID);
+  });
+});*/
+
+const choosingOrg = (postID, text) => {
+    var org;
+    var description;
+    console.log(postID, text)
+    if (text.includes('maestro') && text.includes('insistente')){
+      console.log('Centro de Apoyo a la Mujer Margarita Magón')
+      org = 'Centro de Apoyo a la Mujer Margarita Magón';
+      description = 'Ofrecen asesoría legal y de salud o bien al tratar temas como la perspectiva de género.';
+    } else if (text.includes('tocó')) {
+      console.log('Asociación para el Desarrollo Integral de Mujeres Violadas AC')
+      org = 'Asociación para el Desarrollo Integral de Mujeres Violadas AC';
+      description= 'Imparten cursos psicológicos y legales, en caso de que hayas sido víctima de un delito sexual o quieras prevenir serlo.';
+    } else if (text.includes('miedo')){
+      console.log('Casa Gaviota')
+      org = 'Casa Gaviota';
+      description = "Ayudan a detectar la violencia intrafamiliar y hacia la mujer.";
+    } else if(text.includes('insinuaron')){
+      console.log('Casa Semillas')
+      org = 'Casa Semillas'
+      description = "Luchan por la igualdad de género y dan asesoría a mujeres que han sufrido de violencia.";
+    } else {
+      console.log('Coordinadora Nacional de Ayuda a Mujeres')
+      org = 'Coordinadora Nacional de Ayuda a Mujeres';
+      description = "Especializadas en la ayuda para mujeres. Ayudan en el desarrollo de la mujer."
+    }
+
+    addOrg.innerHTML = `
+    <div class="row">
+    <div class="col s12 m12">
+      <div class="card orange darken-3 ">
+        <div class="card-content white-text">
+          <span class="card-title">${org}</span><br>
+          <p>${description}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Sitio Web</a>
+          <a href="#">WhatssApp</a>
+          <a href="#">Telèfono</a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <h5></h5>
+      <p></p>
+    `
+
+}
