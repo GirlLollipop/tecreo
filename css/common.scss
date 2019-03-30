@@ -41,6 +41,24 @@ body {
       text-align: center;
       color: $white-pure !important;
     }
+    &#item1{
+      height: 50vh;
+      background-image: url("../assets/images/carrucel_1.jpg") !important ;
+      background-position: right;
+      background-size: cover;
+    }
+    &#item2{
+      height: 50vh;
+      background-image: url("../assets/images/carrucel_3.jpg") !important ;
+      background-position: center;
+      background-size: cover;
+    }
+    &#item3{
+      height: 50vh;
+      background-image: url("../assets/images/carrucel_3.jpg") !important ;
+      background-position: center;
+      background-size: cover;
+    }
   }
 
 img{
@@ -61,8 +79,8 @@ ul{
   &.sidenav{
     li{
       &>a{
-        color: $orange-secundary;
-        font-size: 18px;
+        color: $orange-primary;
+        font-size: 20px !important;
       }
     }
   }
