@@ -2,7 +2,7 @@
   "name": "Te creo",
   "short_name": "Te creo",
   "lang": "es-ES",
-  "start_url": "/",
+  "start_url": ".",
   "background_color": "#fda03a",
   "theme_color": "#0581B0",
   "display": "standalone",
@@ -44,5 +44,4 @@
    "density": "4.0"
   }
   ]
-  "start_url": "/"
  }
