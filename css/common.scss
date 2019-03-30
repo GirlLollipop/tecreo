@@ -32,7 +32,7 @@ body {
     }
    }
     &#img-portrait{
-      height: 50vh;
+      height: auto;
       background-image: url("../assets/images/lowsupport.jpg") !important ;
       background-position: right;
       background-size: cover;
@@ -42,20 +42,20 @@ body {
       color: $white-pure !important;
     }
     &#item1{
-      height: 50vh;
+      height: auto;
       background-image: url("../assets/images/carrucel_1.jpg") !important ;
-      background-position: right;
+      background-position: center;
       background-size: cover;
     }
     &#item2{
-      height: 50vh;
+      height: auto;
       background-image: url("../assets/images/carrucel_3.jpg") !important ;
       background-position: center;
       background-size: cover;
     }
     &#item3{
-      height: 50vh;
-      background-image: url("../assets/images/carrucel_3.jpg") !important ;
+      height: auto;
+      background-image: url("../assets/images/carrucel_2.jpg") !important ;
       background-position: center;
       background-size: cover;
     }
@@ -99,6 +99,26 @@ ul{
   }
 }
 
+h2.title{
+  color:$orange-secundary;
+  background-color: $smoke;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bolder !important;
+
+}
+
+.carousel.carousel-slider {
+    top: 0;
+    left: 0;
+    margin-bottom: 5rem !important;
+}
+
+p.subtitle{
+  color:$orange-primary;
+  font-size: 3rem;
+  font-weight: bolder !important;
+}
 @media (min-width:998px) {
   img{
     &#logo{
